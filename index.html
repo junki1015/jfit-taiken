@@ -114,6 +114,33 @@ header .area{margin-left:auto;font-size:.75rem;color:var(--ink-2)}
 .ba-meta span{font-size:.85rem;color:var(--ink-2)}
 @media (min-width:720px){.ba{grid-template-columns:1fr 1fr}}
 
+/* trainer */
+.trainer{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start;margin-top:20px}
+.trainer img{width:120px;aspect-ratio:3/4;object-fit:cover;border-radius:6px;background:var(--concrete)}
+.trainer .nm{font-size:1.2rem;font-weight:700;margin:0}
+.trainer .nm small{display:block;font-size:.78rem;font-weight:600;color:var(--line);letter-spacing:.04em;margin-bottom:2px}
+.trainer ul{list-style:none;padding:0;margin:8px 0 0;font-size:.85rem;color:var(--ink-2);display:grid;gap:4px}
+.trainer li::before{content:"・"}
+.trainer-msg{margin:16px 0 0;padding:14px 16px;background:var(--paper);border-radius:8px;font-size:.95rem;line-height:1.75}
+/* reviews */
+.rating{display:flex;align-items:baseline;gap:10px;margin-top:16px}
+.rating b{font-size:2rem;font-variant-numeric:tabular-nums}
+.rating .stars{color:#e8a317;letter-spacing:.08em;font-size:1.1rem}
+.rating span:last-child{font-size:.85rem;color:var(--ink-2)}
+.reviews{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.reviews li{background:var(--paper);border-radius:8px;padding:14px 16px}
+.reviews p{margin:0;font-size:.92rem;line-height:1.7}
+.reviews .who{display:block;margin-top:6px;font-size:.75rem;color:var(--ink-2)}
+.more{display:inline-block;margin-top:12px;font-size:.88rem;font-weight:700;color:var(--line)}
+/* faq */
+.faq{margin-top:18px;display:grid;gap:8px}
+.faq details{background:var(--paper);border:1px solid var(--rule);border-radius:8px}
+.faq summary{cursor:pointer;list-style:none;padding:14px 40px 14px 16px;font-weight:700;font-size:.95rem;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";position:absolute;right:14px;top:13px;color:var(--line)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:0;padding:0 16px 14px;font-size:.9rem;color:var(--ink-2);line-height:1.7}
+
 /* flow */
 .flow{list-style:none;padding:0;margin:22px 0 0;counter-reset:s;display:grid;gap:0}
 .flow li{counter-increment:s;position:relative;padding:0 0 20px 46px}
@@ -197,7 +224,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
       <li><b>P無料</b>敷地内駐車場</li>
     </ul>
     <a class="cta" href="https://line.me/R/ti/p/@505yjbva" data-cta="hero_line">LINEで無料体験を予約 <small>（1分）</small></a>
-    <p class="cta-note">友だち追加後、「体験希望」と送るだけで空き日時をお送りします</p>
+    <p class="cta-note">友だち追加後、「体験希望」と送るだけ。体験後の勧誘はありません</p>
   </div>
 </div>
 
@@ -216,8 +243,28 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
   </div>
 </section>
 
-<!-- 3. 選ばれる理由 -->
+<!-- 2.5 トレーナー -->
 <section>
+  <div class="wrap">
+    <p class="eyebrow">担当トレーナー</p>
+    <h2>病院で7年、体を診てきた<br>理学療法士が担当します</h2>
+    <div class="trainer">
+      <img src="https://j-fit-personalgym.com/_img/ja/article/1276/image/_/image.webp" alt="担当トレーナー 小林 隼季" width="120" height="160" loading="lazy">
+      <div>
+        <p class="nm"><small>理学療法士／パーソナルトレーナー</small>小林 隼季</p>
+        <ul>
+          <li>病院勤務歴7年</li>
+          <li>医学的知識を活かした安全な指導</li>
+          <li>整体の技術を取り入れたボディメイク</li>
+        </ul>
+      </div>
+    </div>
+    <p class="trainer-msg">理学療法士ならではの知識を活かして、一人ひとりのお悩みを改善に導きます。</p>
+  </div>
+</section>
+
+<!-- 3. 選ばれる理由 -->
+<section class="alt">
   <div class="wrap">
     <p class="eyebrow">J-fitの指導</p>
     <h2>体の仕組みを知る人が、<br>あなたに合わせて組み立てます</h2>
@@ -247,7 +294,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
 </section>
 
 <!-- 3.5 ビフォー・アフター -->
-<section class="alt">
+<section>
   <div class="wrap">
     <p class="eyebrow">会員さんの変化</p>
     <h2>トレーニングと食事管理で、<br>6か月でここまで変わりました</h2>
@@ -271,6 +318,22 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
   </div>
 </section>
 
+<!-- 3.7 口コミ -->
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Googleの口コミ</p>
+    <h2>通っている方の声</h2>
+    <div class="rating"><b>5.0</b><span class="stars" aria-label="5点中5点">★★★★★</span><span>Googleマップ 33件</span></div>
+    <ul class="reviews">
+      <li><p>元々膝が悪く、このままでは本気で歩けなくなる！と危機感を抱いた時に…</p><span class="who">2026年2月の口コミ</span></li>
+      <li><p>50代も後半になり体力の低下を感じて通い始めました。トレーナーの方が…</p><span class="who">2026年3月の口コミ</span></li>
+      <li><p>ジム未経験で入会しましたが、トレーナーさんがとても話しやすく…</p><span class="who">2026年6月の口コミ</span></li>
+      <li><p>継続することが苦手で続くか不安でしたが、トレーナーさんが優しく丁寧に教えてくださるので楽しく通え…</p><span class="who">2026年6月の口コミ</span></li>
+    </ul>
+    <a class="more" href="https://www.google.com/maps/search/?api=1&amp;query=J-fit+personal+gym+%E6%9D%B1%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">Googleマップで口コミの続きを読む →</a>
+  </div>
+</section>
+
 <!-- 4. 体験の流れ -->
 <section>
   <div class="wrap">
@@ -288,7 +351,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
 </section>
 
 <!-- 5. 料金 -->
-<section>
+<section class="alt">
   <div class="wrap">
     <p class="eyebrow">料金（税込）</p>
     <h2>通い方に合わせて選べます</h2>
@@ -322,6 +385,22 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
     <p class="small">デイタイムは9:00〜、ナイトタイムは18:00〜のご利用です。料金はすべて税込。体験時にお体の状態と通い方を伺ったうえで、合うプランをご提案します。</p>  </div>
 </section>
 
+<!-- 5.5 FAQ -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">よくある質問</p>
+    <h2>体験の前に、よく聞かれること</h2>
+    <div class="faq">
+      <details><summary>体験後に入会を勧められますか？</summary><p>勧誘はしません。体験後にプランのご説明はしますが、入会はご自宅でゆっくり考えていただいて大丈夫です。</p></details>
+      <details><summary>腰痛がありますが、トレーニングできますか？</summary><p>可能です。病院勤務経験のある理学療法士が、腰の状態や体の動きを確認したうえで、無理のない内容をご提案します。痛みが強い方・治療中の方は、主治医にご相談のうえお越しください。</p></details>
+      <details><summary>運動経験がまったくありませんが、大丈夫ですか？</summary><p>運動経験のない状態から始める方が多くいらっしゃいます。初回は体の状態を確認するところから始めます。</p></details>
+      <details><summary>持ち物は何が必要ですか？</summary><p>動きやすい服装と、室内用シューズをお持ちください。シューズがない場合は、裸足でのトレーニングも可能です。</p></details>
+      <details><summary>食事についても相談できますか？</summary><p>追加料金なしで食事のアドバイスをしています。無理な制限はせず、生活リズムに合わせた内容をご提案します。</p></details>
+      <details><summary>支払い方法は？</summary><p>現金または口座振込をご利用いただけます。</p></details>
+    </div>
+  </div>
+</section>
+
 <!-- 6. アクセス -->
 <section class="alt">
   <div class="wrap">
@@ -332,6 +411,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
       <dt>住所</dt><dd>大阪府東大阪市若江東町4-1-1</dd>
       <dt>最寄駅</dt><dd>近鉄奈良線「若江岩田」駅から徒歩約15分</dd>
       <dt>駐車場</dt><dd>敷地内に無料駐車場あり</dd>
+      <dt>営業時間</dt><dd>月〜土 9:00〜23:00／日 9:00〜13:00（祝日休み）</dd>
       <dt>電話</dt><dd><a href="tel:08037669228" data-cta="access_tel">080-3766-9228</a></dd>
     </dl>
     <p class="small"><a href="https://www.google.com/maps/search/?api=1&amp;query=J-fit+personal+gym+%E6%9D%B1%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">Googleマップで場所と口コミを見る</a>　｜　<a href="https://j-fit-personalgym.com/" target="_blank" rel="noopener">公式サイト</a></p>
