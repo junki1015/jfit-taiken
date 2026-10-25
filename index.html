@@ -48,8 +48,17 @@ header .area{margin-left:auto;font-size:.75rem;color:var(--ink-2)}
 
 /* hero */
 .hero{position:relative;padding:0}
-.hero-img{width:100%;aspect-ratio:9/10;object-fit:cover;object-position:50% 100%}
+.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 100%}
 .hero-body{padding-block:22px 28px}
+.hero-media{position:relative}
+.hero-tel{position:absolute;inset:auto 0 0 0;padding:44px max(18px,env(safe-area-inset-left,0px)) 16px;color:#fff;
+  background:linear-gradient(to top,rgba(10,12,14,.85) 0%,rgba(10,12,14,.5) 60%,rgba(10,12,14,0) 100%)}
+.ht-badge{display:inline-block;background:#fff;color:var(--ink);font-size:.78rem;font-weight:700;padding:4px 10px;border-radius:3px;letter-spacing:.02em}
+.ht-badge b{color:var(--line-dark)}
+.ht-main{margin:10px 0 0;font-family:var(--display);font-weight:800;font-size:1.65rem;line-height:1.3;letter-spacing:.02em;text-shadow:0 2px 12px rgba(0,0,0,.45)}
+.ht-sub{margin:10px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+.ht-sub span{border:1.5px solid rgba(255,255,255,.85);border-radius:999px;padding:3px 12px;font-size:.8rem;font-weight:700}
+.ht-sub span:first-child{background:var(--line);border-color:var(--line)}
 .hero h1{font-family:var(--display);font-size:1.7rem;line-height:1.4;font-weight:700}
 .hero h1 em{font-style:normal;border-bottom:3px solid var(--line)}
 .hero p.lead{margin:12px 0 0;color:var(--ink-2);font-size:.95rem}
@@ -139,6 +148,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
 @media (min-width:720px){
   .hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;max-width:1040px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px)) max(18px,env(safe-area-inset-right,0px))}
   .hero-img{aspect-ratio:3/4;border-radius:8px}
+  .hero-tel{border-radius:0 0 8px 8px}
   .hero-body{padding:0}
   .hero h1{font-size:2.1rem}
   .why{grid-template-columns:1fr 1fr}
@@ -160,7 +170,14 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
 
 <!-- 1. ファーストビュー -->
 <div class="hero">
+  <div class="hero-media">
   <img class="hero-img" src="img/hero.webp" alt="理学療法士が会員の腰に手を添えてスクワットのフォームを指導している様子" width="724" height="1084" fetchpriority="high">
+    <div class="hero-tel" aria-hidden="true">
+      <span class="ht-badge">病院勤務経験の<b>理学療法士</b>が担当</span>
+      <p class="ht-main">その動き、<br>体に合っていますか？</p>
+      <p class="ht-sub"><span>無料体験50分</span><span>完全マンツーマン</span></p>
+    </div>
+  </div>
   <div class="wrap hero-body">
     <p class="eyebrow">東大阪のパーソナルジム</p>
     <h1><em>理学療法士</em>が、<br>マンツーマンで指導します</h1>
