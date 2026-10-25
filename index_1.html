@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>J-fit personal gym｜理学療法士のパーソナルジム（東大阪・若江岩田）</title>
+<meta name="description" content="病院勤務経験のある理学療法士がマンツーマンで指導する東大阪・若江東町のパーソナルジム。腰痛・膝の不安、運動未経験の方も相談可。無料体験50分受付中。敷地内無料駐車場あり。">
+<link rel="preload" as="image" href="img/hero.webp">
+<!--
+-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R0REWFG43F"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-R0REWFG43F');
+</script>
+<style>
+/* Layout: 1カラムの縦長LP。最初の1画面で「誰が・何を・いくらで・どう申し込むか」が分かる */
+:root{
+  --ink:#16181a;          /* 本文・見出し（ロゴの黒） */
+  --ink-2:#4a4f55;        /* 補足文 */
+  --concrete:#eceae6;     /* セクション地（ジムのコンクリート壁） */
+  --paper:#ffffff;
+  --line:#06c755;         /* LINEの緑＝申込ボタンだけに使う */
+  --line-dark:#05a547;
+  --rule:#d6d3cd;
+  --font:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic UI",Meiryo,sans-serif;
+  --display:"Hiragino Mincho ProN","Yu Mincho","Noto Serif JP",serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.75;
+  padding-bottom:calc(72px + env(safe-area-inset-bottom,0px))}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:680px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+h1,h2,h3{text-wrap:balance;margin:0}
+h2{font-family:var(--display);font-size:1.45rem;line-height:1.45;font-weight:600;letter-spacing:.02em}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;color:var(--ink-2);font-weight:600;margin:0 0 6px}
+section{padding-block:44px}
+.alt{background:var(--concrete)}
+
+/* header */
+header{display:flex;align-items:center;gap:10px;padding-block:10px}
+header img{width:34px;height:auto}
+header .name{font-weight:700;font-size:.95rem;letter-spacing:.03em}
+header .area{margin-left:auto;font-size:.75rem;color:var(--ink-2)}
+
+/* hero */
+.hero{position:relative;padding:0}
+.hero-img{width:100%;aspect-ratio:9/10;object-fit:cover;object-position:50% 100%}
+.hero-body{padding-block:22px 28px}
+.hero h1{font-family:var(--display);font-size:1.7rem;line-height:1.4;font-weight:700}
+.hero h1 em{font-style:normal;border-bottom:3px solid var(--line)}
+.hero p.lead{margin:12px 0 0;color:var(--ink-2);font-size:.95rem}
+.facts{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.facts li{border:1px solid var(--rule);border-radius:6px;padding:8px 6px;text-align:center;font-size:.72rem;line-height:1.35;color:var(--ink-2)}
+.facts b{display:block;font-size:1.02rem;color:var(--ink)}
+
+.cta{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:20px;padding:16px 12px;border-radius:999px;
+  background:var(--line);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;letter-spacing:.02em;
+  box-shadow:0 4px 0 var(--line-dark)}
+.cta:active{transform:translateY(2px);box-shadow:0 2px 0 var(--line-dark)}
+.cta:focus-visible,.tel:focus-visible,.bar a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.cta small{font-weight:500;font-size:.78rem;opacity:.95}
+.cta-note{margin:10px 0 0;text-align:center;font-size:.8rem;color:var(--ink-2)}
+.tel{display:block;text-align:center;margin-top:12px;font-size:.9rem;color:var(--ink-2)}
+.tel a{font-weight:700;color:var(--ink)}
+
+/* worries */
+.worries{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.worries li{background:var(--paper);border-radius:8px;padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start}
+.worries .tag{grid-row:span 2;font-family:var(--display);font-weight:700;font-size:.95rem;border:1.5px solid var(--ink);border-radius:4px;padding:2px 8px;white-space:nowrap}
+.worries strong{font-size:.98rem}
+.worries span{font-size:.86rem;color:var(--ink-2);line-height:1.6}
+.small{font-size:.75rem;color:var(--ink-2);margin:14px 0 0}
+
+/* why */
+.why{display:grid;gap:26px;margin-top:22px}
+.why figure{margin:0}
+.why img{border-radius:6px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.why h3{font-size:1.08rem;margin-top:12px}
+.why p{margin:6px 0 0;color:var(--ink-2);font-size:.92rem}
+
+/* flow */
+.flow{list-style:none;padding:0;margin:22px 0 0;counter-reset:s;display:grid;gap:0}
+.flow li{counter-increment:s;position:relative;padding:0 0 20px 46px}
+.flow li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--ink);color:#fff;
+  font-weight:700;font-size:.9rem;display:grid;place-items:center}
+.flow li::after{content:"";position:absolute;left:14px;top:32px;bottom:2px;width:2px;background:var(--rule)}
+.flow li:last-child::after{display:none}
+.flow strong{display:block;font-size:1rem}
+.flow span{font-size:.88rem;color:var(--ink-2)}
+
+/* price */
+.price-wrap{overflow-x:auto;margin-top:18px}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.92rem}
+caption{text-align:left;font-weight:700;padding:0 0 8px;font-size:.95rem}
+th,td{padding:11px 8px;border-bottom:1px solid var(--rule);text-align:left}
+td{text-align:right;font-weight:700}
+td small{font-weight:400;color:var(--ink-2);font-size:.72rem}
+td.h{font-weight:600;font-size:.78rem;color:var(--ink-2);line-height:1.3;vertical-align:bottom}
+th{font-weight:500;font-size:.88rem}
+.price-wrap+.price-wrap{margin-top:26px}
+
+/* access */
+.access-img{border-radius:6px;margin-top:18px;aspect-ratio:3/2;object-fit:cover;width:100%}
+dl{margin:18px 0 0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:.92rem}
+dt{color:var(--ink-2);white-space:nowrap}
+dd{margin:0}
+
+/* final */
+.final{background:var(--ink);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{color:#cfd2d6;font-size:.92rem;margin:10px 0 0}
+footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
+
+/* fixed bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:1fr auto;gap:8px;
+  padding:8px max(12px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));
+  background:rgba(255,255,255,.96);border-top:1px solid var(--rule);backdrop-filter:blur(6px)}
+.bar a{display:flex;align-items:center;justify-content:center;border-radius:999px;text-decoration:none;font-weight:700;padding:12px 16px;font-size:.95rem}
+.bar .b-line{background:var(--line);color:#fff}
+.bar .b-tel{border:1.5px solid var(--ink);color:var(--ink);font-size:.85rem}
+
+@media (min-width:720px){
+  .hero{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;max-width:1040px;margin:0 auto;padding-inline:max(18px,env(safe-area-inset-left,0px)) max(18px,env(safe-area-inset-right,0px))}
+  .hero-img{aspect-ratio:3/4;border-radius:8px}
+  .hero-body{padding:0}
+  .hero h1{font-size:2.1rem}
+  .why{grid-template-columns:1fr 1fr}
+  .bar{display:none}
+  body{padding-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <img src="img/logo.webp" alt="J-fit personal gym ロゴ" width="34" height="38">
+    <span class="name">J-fit personal gym</span>
+    <span class="area">東大阪・若江東町</span>
+  </header>
+</div>
+
+<!-- 1. ファーストビュー -->
+<div class="hero">
+  <img class="hero-img" src="img/hero.webp" alt="理学療法士が会員の腰に手を添えてスクワットのフォームを指導している様子" width="724" height="1084" fetchpriority="high">
+  <div class="wrap hero-body">
+    <p class="eyebrow">東大阪のパーソナルジム</p>
+    <h1><em>理学療法士</em>が、<br>マンツーマンで指導します</h1>
+    <p class="lead">病院勤務経験のある理学療法士が、体の状態を確認してからメニューを作ります。腰や膝に不安がある方、運動が初めての方もご相談ください。</p>
+    <ul class="facts">
+      <li><b>無料</b>体験50分</li>
+      <li><b>月4回</b>26,400円〜<br>（昼）</li>
+      <li><b>P無料</b>敷地内駐車場</li>
+    </ul>
+    <a class="cta" href="https://line.me/R/ti/p/@505yjbva" data-cta="hero_line">LINEで無料体験を予約 <small>（1分）</small></a>
+    <p class="cta-note">友だち追加後、「体験希望」と送るだけで空き日時をお送りします</p>
+  </div>
+</div>
+
+<!-- 2. 悩み別 -->
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">こんな方に</p>
+    <h2>体の不安を、専門家と一緒に確認しながら</h2>
+    <ul class="worries">
+      <li><span class="tag">腰</span><strong>腰が気になって運動をためらっている</strong><span>動かし方や姿勢を確認し、負担を見ながら強度を調整します。</span></li>
+      <li><span class="tag">膝</span><strong>膝に不安があり、何をすればいいか分からない</strong><span>痛みの出にくいフォームと種目を一緒に探します。</span></li>
+      <li><span class="tag">産後</span><strong>産後の体を少しずつ戻したい</strong><span>体の状態に合わせて、無理のない内容から始めます。</span></li>
+      <li><span class="tag">初心者</span><strong>ジムが初めてで、ついていけるか心配</strong><span>完全マンツーマン。周りの目を気にせず、基本から進めます。</span></li>
+    </ul>
+    <p class="small">※痛みが強い方、治療中の方は、主治医にご相談のうえでお越しください。当ジムは医療機関ではありません。</p>
+  </div>
+</section>
+
+<!-- 3. 選ばれる理由 -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">J-fitの指導</p>
+    <h2>体の仕組みを知る人が、<br>あなたに合わせて組み立てます</h2>
+    <div class="why">
+      <figure>
+        <img src="img/cable.webp" alt="ケーブルマシンで会員の腕の動きを確認する理学療法士" width="768" height="1024" loading="lazy">
+        <h3>理学療法士による体のチェック</h3>
+        <p>関節の動きや筋力のバランスを見たうえで、一人ひとりに合った種目と強度を決めます。</p>
+      </figure>
+      <figure>
+        <img src="img/rack.webp" alt="バーベルを担ぐ会員の腰を支えて指導する様子" width="724" height="1086" loading="lazy">
+        <h3>完全マンツーマン・予約制</h3>
+        <p>トレーニング中は常にトレーナーが隣に。フォームをその場で修正するので、安心して取り組めます。</p>
+      </figure>
+      <figure>
+        <img src="img/mirror.webp" alt="鏡の前でフォームを確認しながら指導を受ける会員" width="504" height="360" loading="lazy">
+        <h3>食事アドバイスは追加料金なし</h3>
+        <p>極端な糖質制限はしません。外食が多い方にも続けやすい、現実的な食事のアドバイスをします。</p>
+      </figure>
+      <figure>
+        <img src="img/bench.webp" alt="ベンチでバーベルを持ち上げる会員" width="360" height="538" loading="lazy">
+        <h3>運動未経験の方も歓迎です</h3>
+        <p>「何から始めればいいか分からない」という方こそ、最初の1回でやり方からお伝えします。</p>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 体験の流れ -->
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">無料体験の流れ（50分）</p>
+    <h2>まずは一度、体を見せてください</h2>
+    <ol class="flow">
+      <li><strong>LINEで「体験希望」と送る</strong><span>空いている日時をこちらからお送りします。</span></li>
+      <li><strong>カウンセリング</strong><span>目的や体の気になるところ、運動歴をお聞きします。</span></li>
+      <li><strong>体のチェックとトレーニング体験</strong><span>姿勢や動きを確認し、実際にトレーニングを体験していただきます。</span></li>
+      <li><strong>プランのご提案</strong><span>入会は体験後にゆっくりご検討ください。その場で決める必要はありません。</span></li>
+    </ol>
+    <p class="small">持ち物：動きやすい服装・室内用シューズ・飲み物</p>
+    <a class="cta" href="https://line.me/R/ti/p/@505yjbva" data-cta="flow_line">LINEで無料体験を予約</a>
+  </div>
+</section>
+
+<!-- 5. 料金 -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">料金（税込）</p>
+    <h2>通い方に合わせて選べます</h2>
+    <div class="price-wrap">
+      <table>
+        <caption>通常プラン（50分）</caption>
+        <tr><th></th><td class="h">デイタイム<small><br>9:00〜</small></td><td class="h">ナイトタイム<small><br>18:00〜</small></td></tr>
+        <tr><th>月4回</th><td>26,400円</td><td>30,800円</td></tr>
+        <tr><th>月8回</th><td>48,000円</td><td>57,600円</td></tr>
+        <tr><th>月12回</th><td>69,600円</td><td>81,600円</td></tr>
+        <tr><th>都度払い</th><td>8,800円</td><td>9,900円</td></tr>
+      </table>
+    </div>
+    <div class="price-wrap">
+      <table>
+        <caption>パーソナル×整体コース（50分＋整体30分）</caption>
+        <tr><th></th><td class="h">デイタイム</td><td class="h">ナイトタイム</td></tr>
+        <tr><th>月4回＋整体4回</th><td>39,600円</td><td>44,000円</td></tr>
+        <tr><th>月8回＋整体8回</th><td>74,400円</td><td>84,400円</td></tr>
+        <tr><th>月12回＋整体12回</th><td>109,200円</td><td>121,200円</td></tr>
+      </table>
+    </div>
+    <div class="price-wrap">
+      <table>
+        <caption>ペア・グループプラン（1人1回あたり）</caption>
+        <tr><th></th><td class="h">デイタイム</td><td class="h">ナイトタイム</td></tr>
+        <tr><th>2名</th><td>4,400円</td><td>5,500円</td></tr>
+        <tr><th>3名以上</th><td>4,000円</td><td>5,000円</td></tr>
+      </table>
+    </div>
+    <p class="small">デイタイムは9:00〜、ナイトタイムは18:00〜のご利用です。料金はすべて税込。体験時にお体の状態と通い方を伺ったうえで、合うプランをご提案します。</p>  </div>
+</section>
+
+<!-- 6. アクセス -->
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">アクセス</p>
+    <h2>敷地内に無料駐車場あり。<br>車でも通いやすい場所です</h2>
+    <img class="access-img" src="img/room.webp" alt="マルチラックとベンチ、ダンベルが置かれたジム内の様子" width="1000" height="666" loading="lazy">
+    <dl>
+      <dt>住所</dt><dd>大阪府東大阪市若江東町4-1-1</dd>
+      <dt>最寄駅</dt><dd>近鉄奈良線「若江岩田」駅から徒歩約15分</dd>
+      <dt>駐車場</dt><dd>敷地内に無料駐車場あり</dd>
+      <dt>電話</dt><dd><a href="tel:08037669228" data-cta="access_tel">080-3766-9228</a></dd>
+    </dl>
+    <p class="small"><a href="https://www.google.com/maps/search/?api=1&amp;query=J-fit+personal+gym+%E6%9D%B1%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">Googleマップで場所と口コミを見る</a>　｜　<a href="https://j-fit-personalgym.com/" target="_blank" rel="noopener">公式サイト</a></p>
+  </div>
+</section>
+
+<!-- 7. 最後のCTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>まずは50分の無料体験から</h2>
+    <p>体験後の無理な勧誘はありません。<br>「自分に合うか」を確かめに来てください。</p>
+    <a class="cta" href="https://line.me/R/ti/p/@505yjbva" data-cta="final_line">LINEで無料体験を予約</a>
+    <p class="tel" style="color:#cfd2d6">お電話の方は <a href="tel:08037669228" style="color:#fff" data-cta="final_tel">080-3766-9228</a></p>
+  </div>
+</section>
+
+<footer class="wrap">© J-fit personal gym</footer>
+
+<nav class="bar" aria-label="お申し込み">
+  <a class="b-line" href="https://line.me/R/ti/p/@505yjbva" data-cta="bar_line">LINEで無料体験</a>
+  <a class="b-tel" href="tel:08037669228" data-cta="bar_tel">電話</a>
+</nav>
+
+<script>
+/* ボタンのクリックを GA4 に送る（LINE= line_click / 電話= tel_click） */
+document.addEventListener('click',function(e){
+  var a=e.target.closest('a[data-cta]');if(!a||typeof gtag!=='function')return;
+  var isTel=a.href.indexOf('tel:')===0;
+  gtag('event',isTel?'tel_click':'line_click',{cta_position:a.dataset.cta,transport_type:'beacon'});
+});
+</script>
+</body>
+</html>
