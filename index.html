@@ -87,10 +87,10 @@ header .area{margin-left:auto;font-size:.75rem;color:var(--ink-2)}
 
 /* worries */
 .worries{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
-.worries li{background:var(--paper);border-radius:8px;padding:14px 16px;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;align-items:start}
-.worries .tag{grid-row:span 2;font-family:var(--display);font-weight:700;font-size:.95rem;border:1.5px solid var(--ink);border-radius:4px;padding:2px 8px;white-space:nowrap}
-.worries strong{font-size:.98rem}
-.worries span{font-size:.86rem;color:var(--ink-2);line-height:1.6}
+.worries li{background:var(--paper);border-radius:8px;padding:16px;display:grid;grid-template-columns:3.6rem 1fr;column-gap:12px;row-gap:4px;align-items:start}
+.worries .tag{grid-row:span 2;align-self:start;text-align:center;font-weight:700;font-size:.82rem;line-height:1;border:1.5px solid var(--line);color:var(--line);border-radius:4px;padding:7px 0;white-space:nowrap}
+.worries strong{font-size:.98rem;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+.worries li>span:not(.tag){font-size:.86rem;color:var(--ink-2);line-height:1.65;word-break:keep-all;overflow-wrap:anywhere}
 .small{font-size:.75rem;color:var(--ink-2);margin:14px 0 0}
 
 /* why */
@@ -207,10 +207,10 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
     <p class="eyebrow">こんな方に</p>
     <h2>体の不安を、専門家と一緒に確認しながら</h2>
     <ul class="worries">
-      <li><span class="tag">腰</span><strong>腰が気になって運動をためらっている</strong><span>動かし方や姿勢を確認し、負担を見ながら強度を調整します。</span></li>
-      <li><span class="tag">膝</span><strong>膝に不安があり、何をすればいいか分からない</strong><span>痛みの出にくいフォームと種目を一緒に探します。</span></li>
-      <li><span class="tag">産後</span><strong>産後の体を少しずつ戻したい</strong><span>体の状態に合わせて、無理のない内容から始めます。</span></li>
-      <li><span class="tag">初心者</span><strong>ジムが初めてで、ついていけるか心配</strong><span>完全マンツーマン。周りの目を気にせず、基本から進めます。</span></li>
+      <li><span class="tag">腰</span><strong>腰が気になり、運動をためらう</strong><span>動き方と姿勢を確認し、負担を見ながら強度を調整します。</span></li>
+      <li><span class="tag">膝</span><strong>膝に不安があり、やり方が分からない</strong><span>痛みの出にくいフォームと種目を、一緒に探します。</span></li>
+      <li><span class="tag">産後</span><strong>産後の体を、少しずつ戻したい</strong><span>体の状態に合わせて、無理のない内容から始めます。</span></li>
+      <li><span class="tag">初心者</span><strong>ジムが初めてで、ついていけるか不安</strong><span>完全マンツーマン。周りの目を気にせず、基本から進めます。</span></li>
     </ul>
     <p class="small">※痛みが強い方、治療中の方は、主治医にご相談のうえでお越しください。当ジムは医療機関ではありません。</p>
   </div>
