@@ -444,6 +444,10 @@ document.addEventListener('click',function(e){
   var a=e.target.closest('a[data-cta]');if(!a||typeof gtag!=='function')return;
   var isTel=a.href.indexOf('tel:')===0;
   gtag('event',isTel?'tel_click':'line_click',{cta_position:a.dataset.cta,transport_type:'beacon'});
+  /* Google広告のコンバージョン：LINEで無料体験予約クリック */
+  if(a.href.indexOf('line.me')!==-1){
+    gtag('event','conversion',{send_to:'AW-18471077410/ovh5CNb2gbYdEKKM2edE',transport_type:'beacon'});
+  }
 });
 </script>
 </body>
