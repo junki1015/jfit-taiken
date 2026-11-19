@@ -85,9 +85,15 @@ header .area{margin-left:auto;font-size:.75rem;color:var(--ink-2)}
 .points li::before{content:"";position:absolute;left:12px;top:13px;width:18px;height:18px;border-radius:50%;background:var(--line) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M4 8.5l2.5 2.5L12 5.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/14px no-repeat}
 .points b{display:block;font-size:.98rem}
 .points span{display:block;font-size:.8rem;color:var(--ink-2)}
-.facts{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.facts li{border:1px solid var(--rule);border-radius:6px;padding:8px 6px;text-align:center;font-size:.72rem;line-height:1.35;color:var(--ink-2)}
-.facts b{display:block;font-size:1.02rem;color:var(--ink)}
+.facts{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.facts li{border:2px solid var(--line);border-radius:10px;overflow:hidden;text-align:center;background:#fff;display:flex;flex-direction:column}
+.facts li.wide{grid-column:1/-1}
+.facts .fh{display:block;background:var(--line);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.04em;padding:7px 8px}
+.facts .fb{display:block;padding:12px 8px 12px;flex:1}
+.facts .num{display:block;font-size:1.9rem;font-weight:800;line-height:1.1;color:var(--line-dark);letter-spacing:-.01em}
+.facts .num small{font-size:.9rem;font-weight:700;margin-left:2px;color:var(--ink)}
+.facts .wide .num{font-size:2.5rem}
+.facts .note{display:block;margin-top:6px;font-size:.75rem;color:var(--ink-2);line-height:1.4}
 
 .cta{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:20px;padding:16px 12px;border-radius:999px;
   background:var(--btn);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;letter-spacing:.02em;
@@ -239,9 +245,9 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
       <li><b>その日の体調でメニューを調整</b><span>疲れた日はストレッチ中心にも</span></li>
     </ul>
     <ul class="facts">
-      <li><b>無料</b>体験50分</li>
-      <li><b>6,600円〜</b>1回あたり<br>（月4回・昼）</li>
-      <li><b>P無料</b>敷地内駐車場</li>
+      <li class="wide"><span class="fh">月4回プラン（9:00〜）</span><span class="fb"><span class="num">26,400<small>円/月</small></span><span class="note">1回あたり6,600円・税込｜月8回なら1回6,000円</span></span></li>
+      <li><span class="fh">無料体験</span><span class="fb"><span class="num">0<small>円</small></span><span class="note">50分・食事アドバイス付き</span></span></li>
+      <li><span class="fh">駐車場</span><span class="fb"><span class="num">無料</span><span class="note">敷地内にあり</span></span></li>
     </ul>
     <a class="cta" href="https://line.me/R/ti/p/@505yjbva" data-cta="hero_line">LINEで無料体験を予約 <small>（1分）</small></a>
     <p class="cta-note">友だち追加後、ボタンを押すだけで予約に進めます。体験後の勧誘はありません</p>
