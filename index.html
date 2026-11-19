@@ -174,6 +174,22 @@ header .area{margin-left:auto;font-size:.75rem;color:var(--ink-2)}
 
 /* price */
 .price-wrap{overflow-x:auto;margin-top:18px}
+.nofee{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:12px 0 0}
+.nofee span{font-size:.8rem;font-weight:700;color:var(--line-dark);background:var(--accent-soft);border-radius:999px;padding:5px 10px}
+.price-nofee{margin:20px 0 0;padding:14px 16px;border:2px solid var(--line);border-radius:10px;background:#fff;font-size:.88rem;color:var(--ink-2);line-height:1.6}
+.price-nofee b{display:block;font-size:1.05rem;color:var(--line-dark)}
+.cmp-wrap{margin-top:20px}
+table.cmp{table-layout:fixed;font-size:.85rem;border-collapse:separate;border-spacing:0}
+table.cmp th{width:22%;text-align:left;font-weight:700;padding:12px 6px;border-bottom:1px solid var(--rule);color:var(--ink)}
+table.cmp td{padding:12px 8px;border-bottom:1px solid var(--rule);text-align:center;line-height:1.45;vertical-align:middle}
+table.cmp td.me{background:var(--accent-soft);color:var(--line-dark);width:42%}
+table.cmp td.me b{font-weight:800}
+table.cmp td.other{color:var(--ink-2);font-size:.8rem}
+table.cmp tr:first-child td{font-weight:800;border-bottom:none}
+table.cmp tr:first-child td.me{background:var(--line);color:#fff;border-radius:10px 10px 0 0;font-size:1rem}
+table.cmp tr:first-child td.other{color:var(--ink-2);font-size:.78rem}
+table.cmp tr:last-child td.me{border-radius:0 0 10px 10px}
+
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.92rem}
 caption{text-align:left;font-weight:700;padding:0 0 8px;font-size:.95rem}
 th,td{padding:11px 8px;border-bottom:1px solid var(--rule);text-align:left}
@@ -249,6 +265,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
       <li><span class="fh">無料体験</span><span class="fb"><span class="num">0<small>円</small></span><span class="note">50分・食事アドバイス付き</span></span></li>
       <li><span class="fh">駐車場</span><span class="fb"><span class="num">無料</span><span class="note">敷地内にあり</span></span></li>
     </ul>
+    <p class="nofee"><span>入会金 0円</span><span>契約期間の縛りなし</span><span>月会費以外の費用なし</span></p>
     <a class="cta" href="https://line.me/R/ti/p/@505yjbva" data-cta="hero_line">LINEで無料体験を予約 <small>（1分）</small></a>
     <p class="cta-note">友だち追加後、ボタンを押すだけで予約に進めます。体験後の勧誘はありません</p>
   </div>
@@ -303,8 +320,8 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
       </figure>
       <figure>
         <img src="img/rack.webp" alt="バーベルを担ぐ会員の腰を支えて指導する様子" width="724" height="1086" loading="lazy">
-        <h3>完全マンツーマン・予約制</h3>
-        <p>トレーニング中は常にトレーナーが隣に。フォームをその場で修正するので、安心して取り組めます。</p>
+        <h3>トレーニングと整体を、同じ人に</h3>
+        <p>体の状態を知っている同じ理学療法士が、トレーニング後に整体30分も担当するコースがあります。お店を分けて通う必要はありません。</p>
       </figure>
       <figure>
         <img src="img/mirror.webp" alt="鏡の前でフォームを確認しながら指導を受ける会員" width="504" height="360" loading="lazy">
@@ -316,6 +333,25 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
         <h3>運動未経験の方も歓迎です</h3>
         <p>「何から始めればいいか分からない」という方こそ、最初の1回でやり方からお伝えします。</p>
       </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 3.3 比較 -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">ほかのジムとの違い</p>
+    <h2>一般的なパーソナルジムと、<br>ここが違います</h2>
+    <div class="cmp-wrap">
+      <table class="cmp">
+        <tr><th></th><td class="me">J-fit</td><td class="other">一般的な<br>パーソナルジム</td></tr>
+        <tr><th>担当</th><td class="me"><b>毎回<br>理学療法士本人</b></td><td class="other">担当が<br>交代することも</td></tr>
+        <tr><th>整体</th><td class="me"><b>同じ人に受けられる</b></td><td class="other">別のお店に通う</td></tr>
+        <tr><th>メニュー</th><td class="me"><b>その日の体を<br>見て決める</b></td><td class="other">決まった<br>プログラム</td></tr>
+        <tr><th>入会金</th><td class="me"><b>0円</b></td><td class="other">1〜5万円<br>かかることが多い</td></tr>
+        <tr><th>契約</th><td class="me"><b>縛りなし・月ごと</b></td><td class="other">2か月〜の<br>コース制が多い</td></tr>
+        <tr><th>駐車場</th><td class="me"><b>敷地内に無料</b></td><td class="other">駐車場なしが<br>多い</td></tr>
+      </table>
     </div>
   </div>
 </section>
@@ -360,6 +396,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
     </ul>
     <p class="small">※Googleマップの口コミから一部を抜粋して掲載しています。感じ方や結果には個人差があります。</p>
     <a class="more" href="https://www.google.com/maps/search/?api=1&amp;query=J-fit+personal+gym+%E6%9D%B1%E5%A4%A7%E9%98%AA" target="_blank" rel="noopener">Googleマップで口コミの続きを読む →</a>
+    <a class="cta" href="https://line.me/R/ti/p/@505yjbva" data-cta="review_line">LINEで無料体験を予約 <small>（1分）</small></a>
   </div>
 </section>
 
@@ -412,6 +449,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
         <tr><th>3名以上</th><td>4,000円</td><td>5,000円</td></tr>
       </table>
     </div>
+    <p class="price-nofee"><b>入会金0円・契約期間の縛りなし</b>月会費以外の費用はかかりません。続けるかどうかは、月ごとに決められます。</p>
     <p class="small">デイタイムは9:00〜、ナイトタイムは18:00〜のご利用です。料金はすべて税込。体験時にお体の状態と通い方を伺ったうえで、合うプランをご提案します。</p>  </div>
 </section>
 
@@ -426,6 +464,7 @@ footer{padding-block:24px;text-align:center;font-size:.75rem;color:var(--ink-2)}
       <details><summary>運動経験がまったくありませんが、大丈夫ですか？</summary><p>運動経験のない状態から始める方が多くいらっしゃいます。初回は体の状態を確認するところから始めます。</p></details>
       <details><summary>持ち物は何が必要ですか？</summary><p>動きやすい服装と、室内用シューズをお持ちください。シューズがない場合は、裸足でのトレーニングも可能です。</p></details>
       <details><summary>食事についても相談できますか？</summary><p>追加料金なしで食事のアドバイスをしています。無理な制限はせず、生活リズムに合わせた内容をご提案します。</p></details>
+      <details><summary>入会金や解約の縛りはありますか？</summary><p>入会金はありません。契約期間の縛りもなく、月会費以外の費用はかかりません。続けるかどうかは月ごとに決めていただけます。</p></details>
       <details><summary>支払い方法は？</summary><p>現金または口座振込をご利用いただけます。PayPayは現在申請中です（利用開始時にお知らせします）。</p></details>
     </div>
   </div>
